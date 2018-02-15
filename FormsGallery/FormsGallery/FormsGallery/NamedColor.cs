@@ -8,8 +8,8 @@ namespace FormsGallery
     {
         public NamedColor(string name, Color color)
         {
-            this.Name = name;
-            this.Color = color;
+            Name = name;
+            Color = color;
         }
 
         public string Name { private set; get; }

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:FormsGallery"
+            x:Class="FormsGallery.HomePage"
+            Title="Forms Gallery"
+            Padding="10, 0">
+
+    <local:CodeExamplesMainPage Title="C# Pages">
+        <local:CodeExamplesMainPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS, Android" Value="csharp.png" />
+            </OnPlatform>
+        </local:CodeExamplesMainPage.Icon>
+    </local:CodeExamplesMainPage>
+    
+    <ContentPage Title="XAML Pages">
+        <local:CodeExamplesMainPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS, Android" Value="xaml.png" />
+            </OnPlatform>
+        </local:CodeExamplesMainPage.Icon>
+        
+        <TableView Intent="Menu">
+            <TableRoot>
+                <TableSection Title="Views for Presentation">
+                    
+                    <TextCell Text="Label"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.LabelDemoPage}" />
+
+                    <TextCell Text="Image"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ImageDemoPage}" />
+
+                    <TextCell Text="BoxView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.BoxViewDemoPage}" />
+
+                    <TextCell Text="WebView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.WebViewDemoPage}" />
+
+                    <TextCell Text = "Map"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.MapDemoPage}" />
+                </TableSection>
+
+                <TableSection Title="Views that Initiate Commands">
+                    
+                    <TextCell Text="Button"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ButtonDemoPage}" />
+
+                    <TextCell Text="SearchBar"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.SearchBarDemoPage}" />
+                </TableSection>
+                
+                <TableSection Title="Views for Common Data Types">
+                    
+                    <TextCell Text= "Slider (double)"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.SliderDemoPage}" />
+
+                    <TextCell Text="Stepper (double)"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.StepperDemoPage}" />
+                    
+                    <TextCell Text="Switch (bool)"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.SwitchDemoPage}" />
+                    
+                    <TextCell Text="DatePicker"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.DatePickerDemoPage}" />
+
+                    <TextCell Text="TimePicker"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.TimePickerDemoPage}" />
+                </TableSection>
+
+                <TableSection Title="Cells">
+
+                    <TextCell Text="ImageCell"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ImageCellDemoPage}" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage>
+</TabbedPage>
