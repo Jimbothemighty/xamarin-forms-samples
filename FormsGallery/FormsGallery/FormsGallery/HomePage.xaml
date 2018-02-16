@@ -41,6 +41,10 @@
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.WebViewDemoPage}" />
 
+                    <TextCell Text="OpenGLView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.OpenGLViewDemoPage}" />
+
                     <TextCell Text = "Map"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.MapDemoPage}" />

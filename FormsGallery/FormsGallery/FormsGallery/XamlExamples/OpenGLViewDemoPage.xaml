@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormsGallery.XamlExamples.OpenGLViewDemoPage"
+             Title="OpenGLView Demo">
+    <StackLayout>
+        <Label Text="OpenGLView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <OpenGLView x:Name="openGLView"
+                    VerticalOptions="FillAndExpand" />
+
+        <Label x:Name="regretsLabel"
+               Text="Sorry, OpenGLView cannot be used on this device!"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"
+               Margin="10, 0" />
+    </StackLayout>
+</ContentPage>

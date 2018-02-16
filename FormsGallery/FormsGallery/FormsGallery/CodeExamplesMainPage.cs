@@ -52,6 +52,13 @@ namespace FormsGallery
 
                         new TextCell
                         {
+                            Text = "OpenGLView",
+                            Command = navigateCommand,
+                            CommandParameter = typeof(CodeExamples.OpenGLViewDemoPage)
+                        },
+
+                        new TextCell
+                        {
                             Text = "Map",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.MapDemoPage)

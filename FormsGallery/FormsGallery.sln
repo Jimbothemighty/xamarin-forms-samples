@@ -11,7 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsGallery.UWP", "FormsGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsGallery.iOS", "FormsGallery\FormsGallery.iOS\FormsGallery.iOS.csproj", "{29AE58F7-406F-4D66-BBEC-2BCF05DC1D8D}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormsGallery.Shared", "FormsGallery\FormsGallery.Shared\FormsGallery.Shared.shproj", "{E60C0A2D-C06E-4F0A-B550-7608EB0F116C}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		FormsGallery\FormsGallery.Shared\FormsGallery.Shared.projitems*{29ae58f7-406f-4d66-bbec-2bcf05dc1d8d}*SharedItemsImports = 4
+		FormsGallery\FormsGallery.Shared\FormsGallery.Shared.projitems*{debd7630-3aa9-4f3e-8794-2ef1bfa2dece}*SharedItemsImports = 4
+		FormsGallery\FormsGallery.Shared\FormsGallery.Shared.projitems*{e60c0a2d-c06e-4f0a-b550-7608eb0f116c}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|ARM = Ad-Hoc|ARM
