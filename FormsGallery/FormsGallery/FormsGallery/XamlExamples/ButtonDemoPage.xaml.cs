@@ -1,20 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace FormsGallery.XamlExamples
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ButtonDemoPage : ContentPage
     {
+        static int clickTotal;
+
         public ButtonDemoPage()
         {
             InitializeComponent();
+        }
+
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+            clickTotal += 1;
+            label.Text = String.Format("{0} button click{1}",
+                                       clickTotal, clickTotal == 1 ? "" : "s");
         }
     }
 }

@@ -25,6 +25,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Label",
+                            Detail = "Display a text string",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.LabelDemoPage)
                         },
@@ -32,6 +33,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Image",
+                            Detail = "Display a bitmap",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ImageDemoPage)
                         },
@@ -39,6 +41,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "BoxView",
+                            Detail = "Display a colored rectangle",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.BoxViewDemoPage)
                         },
@@ -46,6 +49,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "WebView",
+                            Detail = "Display a Web site",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.WebViewDemoPage)
                         },
@@ -190,6 +194,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "TextCell",
+                            Detail="Display text in a ListView or TableView",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.TextCellDemoPage)
                         },
@@ -197,6 +202,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "ImageCell",
+                            Detail="Display a bitmap in a ListView or TableView",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ImageCellDemoPage)
                         },
@@ -204,6 +210,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "SwitchCell",
+                            Detail="Display a Switch in a ListView or TableView",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.SwitchCellDemoPage)
                         },
@@ -211,6 +218,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "EntryCell",
+                            Detail="Display an Entry in a ListView or TableView",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.EntryCellDemoPage)
                         }

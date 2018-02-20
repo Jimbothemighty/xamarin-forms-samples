@@ -26,18 +26,22 @@
                 <TableSection Title="Views for Presentation">
                     
                     <TextCell Text="Label"
+                              Detail="Display a text string"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.LabelDemoPage}" />
 
                     <TextCell Text="Image"
+                              Detail="Display a bitmap"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ImageDemoPage}" />
 
                     <TextCell Text="BoxView"
+                              Detail="Display a colored rectangle"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.BoxViewDemoPage}" />
 
                     <TextCell Text="WebView"
+                              Detail="Display a Web page"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.WebViewDemoPage}" />
 
@@ -84,12 +88,84 @@
                               CommandParameter="{x:Type local:XamlExamples.TimePickerDemoPage}" />
                 </TableSection>
 
+                <TableSection Title="Views for Editing Text">
+                    <TextCell Text="Entry (single line)"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.EntryDemoPage}" />
+
+                    <TextCell Text="Editor (multiple lines)"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.EditorDemoPage}" />
+                </TableSection>
+
+                <TableSection Title="Views to Indicate Activity">
+                    <TextCell Text="ActivityIndicator"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ActivityIndicatorDemoPage}" />
+                    
+                    <TextCell Text="ProgressBar"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ProgressBarDemoPage}" />
+                </TableSection>
+
+                <TableSection Title="Views that Display Collections">
+                    <TextCell Text="Picker"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.PickerDemoPage}" />
+                    
+                    <TextCell Text="ListView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ListViewDemoPage}" />
+
+                    <TextCell Text="TableView for a menu"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.TableViewMenuDemoPage}" />
+
+                    <TextCell Text="TableView for a form"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.TableViewFormDemoPage}" />
+                </TableSection>
+
                 <TableSection Title="Cells">
 
+                    <TextCell Text="TextCell"
+                              Detail="Display text in a ListView or TableView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.TextCellDemoPage}" />
+
                     <TextCell Text="ImageCell"
-                              Detail="TK"
+                              Detail="Display a bitmap in a ListView or TableView"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ImageCellDemoPage}" />
+
+                    <TextCell Text="SwitchCell"
+                              Detail="Display a Switch in a ListView or TableView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.SwitchCellDemoPage}" />
+
+                    <TextCell Text="EntryCell"
+                              Detail="Display an Entry in a ListView or TableView"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.EntryCellDemoPage}" />
+                </TableSection>
+
+
+                <TableSection Title="Layouts with Single Content">
+
+                    <TextCell Text="ContentView"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ContentViewDemoPage}" />
+
+                    <TextCell Text="Frame"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.FrameDemoPage}" />
+
+                    <TextCell Text="ScrollView"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ScrollViewDemoPage}" />
                 </TableSection>
             </TableRoot>
         </TableView>

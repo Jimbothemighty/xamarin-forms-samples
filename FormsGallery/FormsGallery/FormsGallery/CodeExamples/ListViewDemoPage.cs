@@ -6,22 +6,6 @@ namespace FormsGallery.CodeExamples
 {
     class ListViewDemoPage : ContentPage
     {
-        class Person
-        {
-            public Person(string name, DateTime birthday, Color favoriteColor)
-            {
-                Name = name;
-                Birthday = birthday;
-                FavoriteColor = favoriteColor;
-            }
-
-            public string Name { private set; get; }
-
-            public DateTime Birthday { private set; get; }
-
-            public Color FavoriteColor { private set; get; }
-        };
-
         public ListViewDemoPage()
         {
             Label header = new Label

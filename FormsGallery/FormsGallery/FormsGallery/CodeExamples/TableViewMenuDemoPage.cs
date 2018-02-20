@@ -25,6 +25,7 @@ namespace FormsGallery.CodeExamples
                         new TextCell
                         {
                             Text = "Label",
+                            Detail = "Display a text string",
                             Command = new Command(async () => 
                                 await Navigation.PushAsync(new LabelDemoPage()))
                         },
@@ -32,6 +33,7 @@ namespace FormsGallery.CodeExamples
                         new TextCell
                         {
                             Text = "Image",
+                            Detail = "Display a bitmap",
                             Command = new Command(async () => 
                                 await Navigation.PushAsync(new ImageDemoPage()))
                         },
@@ -39,6 +41,7 @@ namespace FormsGallery.CodeExamples
                         new TextCell
                         {
                             Text = "BoxView",
+                            Detail = "Display a colored rectangle",
                             Command = new Command(async () => 
                                 await Navigation.PushAsync(new BoxViewDemoPage()))
                         },
@@ -46,6 +49,7 @@ namespace FormsGallery.CodeExamples
                         new TextCell
                         {
                             Text = "WebView",
+                            Detail = "Display a Web site",
                             Command = new Command(async () => 
                                 await Navigation.PushAsync(new WebViewDemoPage()))
                         },
