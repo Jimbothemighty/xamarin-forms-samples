@@ -167,6 +167,57 @@
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ScrollViewDemoPage}" />
                 </TableSection>
+
+                <TableSection Title="Layouts with Multiple Children">
+
+                    <TextCell Text="StackLayout"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.StackLayoutDemoPage}" />
+                    
+                    <TextCell Text="AbsoluteLayout"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.AbsoluteLayoutDemoPage}" />
+                    
+                    <TextCell Text="Grid"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.GridDemoPage}" />
+                    
+                    <TextCell Text="RelativeLayout"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.RelativeLayoutDemoPage}" />
+                </TableSection>
+
+                <TableSection Title="Pages">
+                    
+                    <TextCell Text="ContentPage"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ContentPageDemoPage}" />
+                    
+                    <TextCell Text="NavigationPage"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.NavigationPageDemoPage}" />
+
+                    <TextCell Text="MasterDetailPage"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.MasterDetailPageDemoPage}" />
+                    
+                    <TextCell Text="TabbedPage"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.TabbedPageDemoPage}" />
+                    
+                    <TextCell Text="CarouselPage"
+                              Detail="TK"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.CarouselPageDemoPage}" />
+                </TableSection>
             </TableRoot>
         </TableView>
     </ContentPage>

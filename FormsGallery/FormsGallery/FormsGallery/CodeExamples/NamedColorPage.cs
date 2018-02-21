@@ -13,8 +13,6 @@ namespace FormsGallery.CodeExamples
 	{
 		public NamedColorPage (bool includeBigLabel)
 		{
-            Title = "NamedColor";
-
 			// This binding is necessary to label the tabs in the TabbedPage.
 			this.SetBinding (ContentPage.TitleProperty, "Name");
 
