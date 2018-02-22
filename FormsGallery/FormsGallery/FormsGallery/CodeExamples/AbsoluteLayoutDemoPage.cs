@@ -14,8 +14,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "AbsoluteLayout",
-				FontSize = 40,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 40,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 

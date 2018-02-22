@@ -13,8 +13,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "Button",
-				FontSize = 50,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 50,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 
@@ -31,7 +31,7 @@ namespace FormsGallery.CodeExamples
             label = new Label
             {
                 Text = "0 button clicks",
-				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };

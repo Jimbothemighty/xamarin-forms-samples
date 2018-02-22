@@ -3,94 +3,94 @@ using Xamarin.Forms;
 
 namespace FormsGallery.CodeExamples
 {
-	class GridDemoPage : ContentPage
-	{
-		public GridDemoPage ()
-		{
-			Grid grid = new Grid
+    class GridDemoPage : ContentPage
+    {
+        public GridDemoPage ()
+        {
+            Grid grid = new Grid
             {
-				VerticalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
                 Margin = new Thickness(10),
                 RowDefinitions =
                 {
-					new RowDefinition { Height = GridLength.Auto },
-					new RowDefinition { Height = GridLength.Auto },
-					new RowDefinition { Height = new GridLength (1, GridUnitType.Star) },
-					new RowDefinition { Height = new GridLength (100, GridUnitType.Absolute) }
-				},
-				ColumnDefinitions =
+                    new RowDefinition { Height = GridLength.Auto },
+                    new RowDefinition { Height = GridLength.Auto },
+                    new RowDefinition { Height = new GridLength (1, GridUnitType.Star) },
+                    new RowDefinition { Height = new GridLength (100, GridUnitType.Absolute) }
+                },
+                ColumnDefinitions =
                 {
-					new ColumnDefinition { Width = GridLength.Auto },
-					new ColumnDefinition { Width = new GridLength (1, GridUnitType.Star) },
-					new ColumnDefinition { Width = new GridLength (100, GridUnitType.Absolute) }
-				}
-			};
+                    new ColumnDefinition { Width = GridLength.Auto },
+                    new ColumnDefinition { Width = new GridLength (1, GridUnitType.Star) },
+                    new ColumnDefinition { Width = new GridLength (100, GridUnitType.Absolute) }
+                }
+            };
 
-			grid.Children.Add (new Label
+            grid.Children.Add (new Label
             {
-				Text = "Grid",
-				FontSize = 50,
-				FontAttributes = FontAttributes.Bold,
-				HorizontalOptions = LayoutOptions.Center
-			}, 0, 3, 0, 1);
+                Text = "Grid",
+                FontSize = 50,
+                FontAttributes = FontAttributes.Bold,
+                HorizontalOptions = LayoutOptions.Center
+            }, 0, 3, 0, 1);
 
-			grid.Children.Add (new Label
+            grid.Children.Add (new Label
             {
-				Text = "Autosized cell",
-				TextColor = Color.White,
-				BackgroundColor = Color.Blue
-			}, 0, 1);
+                Text = "Autosized cell",
+                TextColor = Color.White,
+                BackgroundColor = Color.Blue
+            }, 0, 1);
 
-			grid.Children.Add (new BoxView
+            grid.Children.Add (new BoxView
             {
-				Color = Color.Silver,
-				HeightRequest = 0
-			}, 1, 1);
+                Color = Color.Silver,
+                HeightRequest = 0
+            }, 1, 1);
 
-			grid.Children.Add (new BoxView
+            grid.Children.Add (new BoxView
             {
-				Color = Color.Teal
-			}, 0, 2);
+                Color = Color.Teal
+            }, 0, 2);
 
-			grid.Children.Add (new Label
+            grid.Children.Add (new Label
             {
-				Text = "Leftover space",
-				TextColor = Color.Purple,
-				BackgroundColor = Color.Aqua,
-				HorizontalTextAlignment = TextAlignment.Center,
-				VerticalTextAlignment = TextAlignment.Center,
-			}, 1, 2);
+                Text = "Leftover space",
+                TextColor = Color.Purple,
+                BackgroundColor = Color.Aqua,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+            }, 1, 2);
 
-			grid.Children.Add (new Label
+            grid.Children.Add (new Label
             {
-				Text = "Span two rows (or more if you want)",
-				TextColor = Color.Yellow,
-				BackgroundColor = Color.Navy,
-				HorizontalTextAlignment = TextAlignment.Center,
-				VerticalTextAlignment = TextAlignment.Center
-			}, 2, 3, 1, 3);
+                Text = "Span two rows (or more if you want)",
+                TextColor = Color.Yellow,
+                BackgroundColor = Color.Navy,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }, 2, 3, 1, 3);
 
-			grid.Children.Add (new Label
+            grid.Children.Add (new Label
             {
-				Text = "Span 2 columns",
-				TextColor = Color.Blue,
-				BackgroundColor = Color.Yellow,
-				HorizontalTextAlignment = TextAlignment.Center,
-				VerticalTextAlignment = TextAlignment.Center
-			}, 0, 2, 3, 4);
+                Text = "Span 2 columns",
+                TextColor = Color.Blue,
+                BackgroundColor = Color.Yellow,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }, 0, 2, 3, 4);
 
-			grid.Children.Add (new Label
+            grid.Children.Add (new Label
             {
-				Text = "Fixed 100x100",
-				TextColor = Color.Aqua,
-				BackgroundColor = Color.Red,
-				HorizontalTextAlignment = TextAlignment.Center,
-				VerticalTextAlignment = TextAlignment.Center
-			}, 2, 3);
+                Text = "Fixed 100x100",
+                TextColor = Color.Aqua,
+                BackgroundColor = Color.Red,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }, 2, 3);
 
             // Build the page.
             Title = "Grid Demo";
-			Content = grid;
-		}
-	}
+            Content = grid;
+        }
+    }
 }

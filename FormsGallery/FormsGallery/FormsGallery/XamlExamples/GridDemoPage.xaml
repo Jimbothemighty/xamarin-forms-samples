@@ -25,18 +25,18 @@
                Grid.Row="0"
                FontSize="50"
                FontAttributes="Bold"
-	           HorizontalOptions="Center" />
+               HorizontalOptions="Center" />
 
         <Label Text="Autosized cell"
                Grid.Column="0"
                Grid.Row="1"
-			   TextColor="White"
-			   BackgroundColor="Blue" />
+               TextColor="White"
+               BackgroundColor="Blue" />
 
         <BoxView Color="Silver"
                  Grid.Column="1"
                  Grid.Row="1"
-				 HeightRequest="0" />
+                 HeightRequest="0" />
 
         <BoxView Color="Teal"
                  Grid.Column="0"
@@ -45,8 +45,8 @@
         <Label Text="Leftover space"
                Grid.Column="1"
                Grid.Row="2"
-			   TextColor="Purple"
-			   BackgroundColor="Aqua"
+               TextColor="Purple"
+               BackgroundColor="Aqua"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
 
@@ -54,8 +54,8 @@
                Grid.Column="2"
                Grid.Row="1"
                Grid.RowSpan="2"
-			   TextColor="Yellow"
-			   BackgroundColor="Navy"
+               TextColor="Yellow"
+               BackgroundColor="Navy"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
 
@@ -63,16 +63,16 @@
                Grid.Column="0"
                Grid.ColumnSpan="2"
                Grid.Row="3"
-			   TextColor="Blue"
-			   BackgroundColor="Yellow"
+               TextColor="Blue"
+               BackgroundColor="Yellow"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
 
         <Label Text="Fixed 100x100"
                Grid.Column="2"
                Grid.Row="3"
-			   TextColor="Aqua"
-			   BackgroundColor="Red"
+               TextColor="Aqua"
+               BackgroundColor="Red"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
     </Grid>

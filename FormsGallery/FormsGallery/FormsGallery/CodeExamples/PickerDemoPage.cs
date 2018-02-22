@@ -10,7 +10,7 @@ namespace FormsGallery.CodeExamples
         Dictionary<string, Color> nameToColor = new Dictionary<string, Color>
         {
             { "Aqua", Color.Aqua },         { "Black", Color.Black },
-			{ "Blue", Color.Blue },         { "Fuchsia", Color.Fuchsia },
+            { "Blue", Color.Blue },         { "Fuchsia", Color.Fuchsia },
             { "Gray", Color.Gray },         { "Green", Color.Green },
             { "Lime", Color.Lime },         { "Maroon", Color.Maroon },
             { "Navy", Color.Navy },         { "Olive", Color.Olive },
@@ -24,8 +24,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "Picker",
-				FontSize = 50,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 50,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 

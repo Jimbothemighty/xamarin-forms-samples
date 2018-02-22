@@ -10,8 +10,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "ScrollView",
-				FontSize = 50,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 50,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 
@@ -48,7 +48,7 @@ namespace FormsGallery.CodeExamples
                            "a ScrollView just to be sure your stuff doesn't " +
                            "go running off the bottom of the screen.",
 
-					FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 }
             };
 

@@ -1,20 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Collections;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace FormsGallery.XamlExamples
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterDetailPageDemoPage : ContentPage
+    public partial class MasterDetailPageDemoPage : MasterDetailPage
     {
         public MasterDetailPageDemoPage()
         {
             InitializeComponent();
+
+            listView.SelectedItem = (listView.ItemsSource as IList)?[0];
+        }
+
+        void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            // Show the detail page.
+            IsPresented = false;
         }
     }
 }

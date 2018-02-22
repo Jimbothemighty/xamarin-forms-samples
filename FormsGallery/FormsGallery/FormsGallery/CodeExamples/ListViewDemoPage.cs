@@ -11,8 +11,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "ListView",
-				FontSize = 50,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 50,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 
@@ -22,7 +22,7 @@ namespace FormsGallery.CodeExamples
                 new Person("Abigail", new DateTime(1975, 1, 15), Color.Aqua),
                 new Person("Bob", new DateTime(1976, 2, 20), Color.Black),
                 new Person("Cathy", new DateTime(1977, 3, 10), Color.Blue),
-				new Person("David", new DateTime(1978, 4, 25), Color.Fuchsia),
+                new Person("David", new DateTime(1978, 4, 25), Color.Fuchsia),
                 new Person("Eugenie", new DateTime(1979, 5, 5), Color.Gray),
                 new Person("Freddie", new DateTime(1980, 6, 30), Color.Green),
                 new Person("Greta", new DateTime(1981, 7, 15), Color.Lime),
@@ -37,7 +37,7 @@ namespace FormsGallery.CodeExamples
                 new Person("Pendleton", new DateTime(1978, 4, 10), Color.Yellow),
                 new Person("Queenie", new DateTime(1979, 5, 15), Color.Aqua),
                 new Person("Rob", new DateTime(1980, 6, 30), Color.Blue),
-				new Person("Sally", new DateTime(1981, 7, 5), Color.Fuchsia),
+                new Person("Sally", new DateTime(1981, 7, 5), Color.Fuchsia),
                 new Person("Timothy", new DateTime(1982, 8, 30), Color.Green),
                 new Person("Uma", new DateTime(1983, 9, 10), Color.Lime),
                 new Person("Victor", new DateTime(1984, 10, 20), Color.Maroon),

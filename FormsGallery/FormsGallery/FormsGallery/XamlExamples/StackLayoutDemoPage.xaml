@@ -6,7 +6,7 @@
     <StackLayout>
         <Label Text="StackLayout"
                FontSize="50"
-			   FontAttributes="Bold"
+               FontAttributes="Bold"
                HorizontalOptions="Center" />
 
         <StackLayout Spacing="0"

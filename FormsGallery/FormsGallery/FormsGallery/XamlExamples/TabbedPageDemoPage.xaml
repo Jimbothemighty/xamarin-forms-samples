@@ -39,8 +39,8 @@
 
                     <BoxView Color="{Binding Color}"
                          WidthRequest="100"
-				         HeightRequest="100"
-				         HorizontalOptions="Center" />
+                         HeightRequest="100"
+                         HorizontalOptions="Center" />
 
                     <StackLayout HorizontalOptions="Center"
                                  VerticalOptions="CenterAndExpand">

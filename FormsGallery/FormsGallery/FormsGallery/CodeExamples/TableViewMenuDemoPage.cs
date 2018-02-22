@@ -10,8 +10,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "TableView for a menu",
-				FontSize = 30,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 30,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 

@@ -10,8 +10,8 @@ namespace FormsGallery.CodeExamples
             Label header = new Label
             {
                 Text = "ActivityIndicator",
-				FontSize = 40,
-				FontAttributes = FontAttributes.Bold,
+                FontSize = 40,
+                FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 

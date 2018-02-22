@@ -36,7 +36,7 @@ namespace FormsGallery.CodeExamples
                 {
                     Text = "Android applications require API key " +
                            "to use the Google Map service.",
-					FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                     VerticalOptions = LayoutOptions.CenterAndExpand
                 };
             }

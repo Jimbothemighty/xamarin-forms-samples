@@ -10,6 +10,7 @@
                HorizontalOptions="Center" />
 
         <Image Source="https://www.xamarin.com/content/images/pages/branding/assets/xamagon.png"
+               HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
