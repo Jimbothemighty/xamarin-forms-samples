@@ -8,11 +8,9 @@
     <TabbedPage.ItemsSource>
         <x:Array Type="{x:Type local:NamedColor}">
             <local:NamedColor Name="Red" Color="Red" />
-            <local:NamedColor Name="Yellow" Color="Yellow" />
             <local:NamedColor Name="Green" Color="Green" />
-            <local:NamedColor Name="Aqua" Color="Aqua" />
             <local:NamedColor Name="Blue" Color="Blue" />
-            <local:NamedColor Name="Purple" Color="Purple" />
+            <local:NamedColor Name="Yellow" Color="Yellow" />
         </x:Array>
     </TabbedPage.ItemsSource>
 

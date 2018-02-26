@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
-// using Xamarin.Forms.Maps;
+using Xamarin.Forms.Maps;
 
 // Map requires:
-//      - Xamarin.Forms.Maps and Xamarin.Forms.Maps.* assemblies,
+//      - Installing the Xamarin.Forms.Maps NuGet package
+//              (Use the same version number as the Xamarin.Forms package)
 //      - a platform-specific call to Xamarin.FormsMaps.Init() in:
 //              - iOS: AppDelegate.cs
 //              - Android: MainActivity.cs
-//              - WP: MainPage.xaml.cs
+//              - UWP: App.xaml.cs (with API key)
 //      - platform-specific permission:
-//              - iOS: None
-//              - Android: API key!
-//              - WP: WMAppManifest.xaml, Capabilities, ID_CAP_MAP
+//              - iOS: location request in info.plist
+//              - Android: API key in Android.Manifest.xml, plus location permissions
+//              - UWP: package.appxmanifest Capabilities: Location
 
 namespace FormsGallery.CodeExamples
 {
@@ -28,35 +28,16 @@ namespace FormsGallery.CodeExamples
                 HorizontalOptions = LayoutOptions.Center
             };
 
-            View view;
+            Map map = new Map();
 
-            if (Device.RuntimePlatform == Device.Android)
+            // Let's visit Xamarin HQ in San Francisco!
+            Position position = new Position(37.79762, -122.40181);
+            map.MoveToRegion(new MapSpan(position, 0.01, 0.01));
+            map.Pins.Add(new Pin
             {
-                view = new Label
-                {
-                    Text = "Android applications require API key " +
-                           "to use the Google Map service.",
-                    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                    VerticalOptions = LayoutOptions.CenterAndExpand
-                };
-            }
-            else
-            {
-
-/*
-                Map map = new Map();
-                view = map;
-
-                // Let's visit Xamarin HQ in San Francisco!
-                Position position = new Position(37.79762, -122.40181);
-                map.MoveToRegion(new MapSpan(position, 0.01, 0.01));
-                map.Pins.Add(new Pin
-                    {
-                        Label = "Xamarin",
-                        Position = position
-                    });
-*/
-            }
+                Label = "Xamarin",
+                Position = position
+            });
 
             // Build the page.
             Title = "Map Demo";
@@ -65,7 +46,7 @@ namespace FormsGallery.CodeExamples
                 Children =
                 {
                     header,
-    //                view
+                    map
                 }
             };
         }
