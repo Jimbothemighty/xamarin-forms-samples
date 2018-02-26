@@ -17,9 +17,6 @@ namespace FormsGallery.CodeExamples
 
             ActivityIndicator activityIndicator = new ActivityIndicator
             {
-                // TODO: Clean up
-
-      //          Color = Device.RuntimePlatform == Device.iOS ? Color.Black : Color.Default,
                 IsRunning = true,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };

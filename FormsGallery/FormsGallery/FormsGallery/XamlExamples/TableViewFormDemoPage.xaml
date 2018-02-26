@@ -16,9 +16,16 @@
                     <TextCell Text="Text Cell"
                               Detail="With Detail Text" />
                     
-                    <ImageCell ImageSource="https://www.xamarin.com/content/images/pages/branding/assets/xamagon.png"
-                               Text = "Image Cell"
-                               Detail = "With Detail Text" />
+                    <ImageCell Text = "Image Cell"
+                               Detail = "With Detail Text">
+                        <ImageCell.ImageSource>
+                            <OnPlatform x:TypeArguments="ImageSource">
+                                <On Platform="iOS" Value="Icon-Small-40.png" />
+                                <On Platform="Android" Value="icon.png" />
+                                <On Platform="UWP, Windows, WinRT, WinPhone" Value="Assets/Icon.png" />
+                            </OnPlatform>
+                        </ImageCell.ImageSource>
+                    </ImageCell>
 
                     <SwitchCell Text="Switch Cell" />
 

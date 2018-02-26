@@ -15,6 +15,23 @@ namespace FormsGallery.CodeExamples
                 HorizontalOptions = LayoutOptions.Center
             };
 
+            ImageSource imageSource = null;
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    imageSource = ImageSource.FromFile("Icon-Small-40.png");
+                    break;
+
+                case Device.Android:
+                    imageSource = ImageSource.FromFile("icon.png");
+                    break;
+
+                case Device.UWP:
+                    imageSource = ImageSource.FromFile("Assets/icon.png");
+                    break;
+            };
+
             TableView tableView = new TableView
             {
                 Intent = TableIntent.Form,
@@ -29,20 +46,7 @@ namespace FormsGallery.CodeExamples
                         },
                         new ImageCell
                         {
-                            // TODO: Fix this
-
-                            // Some differences with loading images in initial release.
-                            ImageSource = 
-                            
-                            // Device.RuntimePlatform == Device.iOS ? 
-                            
-                       //     ImageSource.FromUri(new Uri("http://xamarin.com/images/index/ide-xamarin-studio.png")) 
-                       ImageSource.FromUri(new Uri("https://www.xamarin.com/content/images/pages/branding/assets/xamagon.png"))
-
-                            ,
-                            
-                          //  :
-                            //              Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("ide_xamarin_studio.png") : ImageSource.FromFile("Images/ide-xamarin-studio.png"),
+                            ImageSource = imageSource,
                             Text = "Image Cell",
                             Detail = "With Detail Text",
                         },
