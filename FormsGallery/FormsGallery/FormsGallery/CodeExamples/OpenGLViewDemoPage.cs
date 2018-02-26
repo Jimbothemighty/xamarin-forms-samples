@@ -1,6 +1,11 @@
 ﻿using System;
 using Xamarin.Forms;
 
+// OpenGLView is only supported in iOS and Android projects.
+// To enable it, add a new Reference in the iOS and Android
+//  projects to a Framework assembly. In the list, select
+//  openTK-1.0 (for iOS) and OpenTK 1.0.0.0 (for Android).
+
 namespace FormsGallery.CodeExamples
 {
     public class OpenGLViewDemoPage : ContentPage

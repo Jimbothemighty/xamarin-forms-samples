@@ -46,10 +46,12 @@
                               CommandParameter="{x:Type local:XamlExamples.WebViewDemoPage}" />
 
                     <TextCell Text="OpenGLView"
+                              Detail="Display OpenGL Graphics"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.OpenGLViewDemoPage}" />
 
                     <TextCell Text = "Map"
+                              Detail="Display a map"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.MapDemoPage}" />
                 </TableSection>
@@ -57,10 +59,12 @@
                 <TableSection Title="Views that Initiate Commands">
                     
                     <TextCell Text="Button"
+                              Detail="Initiate a command"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ButtonDemoPage}" />
 
                     <TextCell Text="SearchBar"
+                              Detail="Initiate a search"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.SearchBarDemoPage}" />
                 </TableSection>
@@ -68,60 +72,73 @@
                 <TableSection Title="Views for Common Data Types">
                     
                     <TextCell Text= "Slider (double)"
+                              Detail="Select a number from a continuous range"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.SliderDemoPage}" />
 
                     <TextCell Text="Stepper (double)"
+                              Detail="Select a number from discrete increments"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.StepperDemoPage}" />
                     
                     <TextCell Text="Switch (bool)"
+                              Detail="Select a Boolean value"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.SwitchDemoPage}" />
                     
                     <TextCell Text="DatePicker"
+                              Detail="Select a date"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.DatePickerDemoPage}" />
 
                     <TextCell Text="TimePicker"
+                              Detail="Select a time"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.TimePickerDemoPage}" />
                 </TableSection>
 
                 <TableSection Title="Views for Editing Text">
                     <TextCell Text="Entry (single line)"
+                              Detail="Edit a single line of text"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.EntryDemoPage}" />
 
                     <TextCell Text="Editor (multiple lines)"
+                              Detail="Edit a body of text"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.EditorDemoPage}" />
                 </TableSection>
 
                 <TableSection Title="Views to Indicate Activity">
                     <TextCell Text="ActivityIndicator"
+                              Detail="Show that the program is busy"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ActivityIndicatorDemoPage}" />
                     
                     <TextCell Text="ProgressBar"
+                              Detail="Show the progress of a program task"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ProgressBarDemoPage}" />
                 </TableSection>
 
                 <TableSection Title="Views that Display Collections">
                     <TextCell Text="Picker"
+                              Detail="Select from a list of text items"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.PickerDemoPage}" />
                     
                     <TextCell Text="ListView"
+                              Detail="Select from a list of data items"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ListViewDemoPage}" />
 
                     <TextCell Text="TableView for a menu"
+                              Detail="Show a table suitable for a menu"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.TableViewMenuDemoPage}" />
 
                     <TextCell Text="TableView for a form"
+                              Detail="Show a table suitable for a form"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.TableViewFormDemoPage}" />
                 </TableSection>
@@ -153,17 +170,17 @@
                 <TableSection Title="Layouts with Single Content">
 
                     <TextCell Text="ContentView"
-                              Detail="TK"
+                              Detail="Host a single child"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ContentViewDemoPage}" />
 
                     <TextCell Text="Frame"
-                              Detail="TK"
+                              Detail="Show a rectangle around a single child"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.FrameDemoPage}" />
 
                     <TextCell Text="ScrollView"
-                              Detail="TK"
+                              Detail="Scroll an item too large for the page"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ScrollViewDemoPage}" />
                 </TableSection>
@@ -171,22 +188,22 @@
                 <TableSection Title="Layouts with Multiple Children">
 
                     <TextCell Text="StackLayout"
-                              Detail="TK"
+                              Detail="Arrange children in a stack"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.StackLayoutDemoPage}" />
                     
                     <TextCell Text="AbsoluteLayout"
-                              Detail="TK"
+                              Detail="Arrange children by coordinate positions"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.AbsoluteLayoutDemoPage}" />
                     
                     <TextCell Text="Grid"
-                              Detail="TK"
+                              Detail="Arrange children in a grid"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.GridDemoPage}" />
                     
                     <TextCell Text="RelativeLayout"
-                              Detail="TK"
+                              Detail="Arrange children relative to each other"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.RelativeLayoutDemoPage}" />
                 </TableSection>
@@ -194,27 +211,27 @@
                 <TableSection Title="Pages">
                     
                     <TextCell Text="ContentPage"
-                              Detail="TK"
+                              Detail="Present a normal page"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ContentPageDemoPage}" />
                     
                     <TextCell Text="NavigationPage"
-                              Detail="TK"
+                              Detail="Present a navigatable page"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.NavigationPageDemoPage}" />
 
                     <TextCell Text="MasterDetailPage"
-                              Detail="TK"
+                              Detail="Present two pages with a list and an item"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.MasterDetailPageDemoPage}" />
                     
                     <TextCell Text="TabbedPage"
-                              Detail="TK"
+                              Detail="Present a page with tabs"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.TabbedPageDemoPage}" />
                     
                     <TextCell Text="CarouselPage"
-                              Detail="TK"
+                              Detail="Present a horizontally scrollable page"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.CarouselPageDemoPage}" />
                 </TableSection>

@@ -57,6 +57,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "OpenGLView",
+                            Detail = "Display OpenGL Graphics",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.OpenGLViewDemoPage)
                         },
@@ -64,6 +65,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Map",
+                            Detail = "Display a map",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.MapDemoPage)
                         }
@@ -74,6 +76,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Button",
+                            Detail = "Initiate a command",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ButtonDemoPage)
                         },
@@ -81,6 +84,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "SearchBar",
+                            Detail = "Initiate a search",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.SearchBarDemoPage)
                         }
@@ -91,6 +95,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Slider (double)",
+                            Detail = "Select a number from a continuous range",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.SliderDemoPage)
                         },
@@ -98,6 +103,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Stepper (double)",
+                            Detail = "Select a number from discrete increments",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.StepperDemoPage)
                         },
@@ -105,6 +111,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Switch (bool)",
+                            Detail = "Select a Boolean value",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.SwitchDemoPage)
                         },
@@ -112,6 +119,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "DatePicker",
+                            Detail = "Select a date",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.DatePickerDemoPage)
                         },
@@ -119,6 +127,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "TimePicker",
+                            Detail = "Select a time",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.TimePickerDemoPage)
                         }
@@ -129,6 +138,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Entry (single line)",
+                            Detail = "Edit a single line of text",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.EntryDemoPage)
                         },
@@ -136,6 +146,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Editor (multiple lines)",
+                            Detail = "Edit a body of text",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.EditorDemoPage)
                         }
@@ -146,6 +157,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "ActivityIndicator",
+                            Detail = "Show that the program is busy",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ActivityIndicatorDemoPage)
                         },
@@ -153,6 +165,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "ProgressBar",
+                            Detail = "Show the progress of a program task",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ProgressBarDemoPage)
                         }
@@ -163,6 +176,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "Picker",
+                            Detail = "Select from a list of text items",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.PickerDemoPage)
                         },
@@ -170,6 +184,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "ListView",
+                            Detail = "Select from a list of data items",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ListViewDemoPage)
                         },
@@ -177,6 +192,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "TableView for a menu",
+                            Detail = "Show a table suitable for a menu",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.TableViewMenuDemoPage) 
                         },
@@ -184,6 +200,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "TableView for a form",
+                            Detail = "Show a table suitable for a form",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.TableViewFormDemoPage)
                         }
@@ -229,18 +246,21 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "ContentView",
+                            Detail = "Host a single child",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ContentViewDemoPage)
                         },
                         new TextCell
                         {
                             Text = "Frame",
+                            Detail = "Show a rectangle around a single child",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.FrameDemoPage)
                         },
                         new TextCell
                         {
                             Text = "ScrollView",
+                            Detail = "Scroll an item too large for the page",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ScrollViewDemoPage)
                         }
@@ -251,24 +271,28 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "StackLayout",
+                            Detail = "Arrange children in a stack",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.StackLayoutDemoPage)
                         },
                         new TextCell
                         {
                             Text = "AbsoluteLayout",
+                            Detail = "Arrange children by coordinate positions",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.AbsoluteLayoutDemoPage)
                         },
                         new TextCell
                         {
                             Text = "Grid",
+                            Detail = "Arrange children in a grid",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.GridDemoPage)
                         },
                         new TextCell
                         {
                             Text = "RelativeLayout",
+                            Detail = "Arrange children relative to each other",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.RelativeLayoutDemoPage)
                         }
@@ -279,30 +303,35 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "ContentPage",
+                            Detail = "Present a normal page",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.ContentPageDemoPage) 
                         },
                         new TextCell
                         {
                             Text = "NavigationPage",
+                            Detail = "Present a navigatable page",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.NavigationPageDemoPage) 
                         },
                         new TextCell
                         {
                             Text = "MasterDetailPage",
+                            Detail = "Present two pages with a list and an item",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.MasterDetailPageDemoPage)
                         },
                         new TextCell
                         {
                             Text = "TabbedPage",
+                            Detail = "Present a page with tabs",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.TabbedPageDemoPage)
                         },
                         new TextCell
                         {
                             Text = "CarouselPage",
+                            Detail = "Present a horizontally scrollable page",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.CarouselPageDemoPage)
                         }
@@ -312,6 +341,3 @@ namespace FormsGallery
         }
     }
 }
-
-
-
