@@ -60,6 +60,8 @@ namespace FormsGallery.UWP
 
                 Xamarin.Forms.Forms.Init(e);
 
+                Xamarin.FormsMaps.Init("MAP_KEY");
+
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application

@@ -49,7 +49,7 @@ namespace FormsGallery
                         new TextCell
                         {
                             Text = "WebView",
-                            Detail = "Display a Web site",
+                            Detail = "Display a Web page",
                             Command = navigateCommand,
                             CommandParameter = typeof(CodeExamples.WebViewDemoPage)
                         },

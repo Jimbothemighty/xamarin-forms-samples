@@ -12,11 +12,9 @@ namespace FormsGallery.CodeExamples
             ItemsSource = new NamedColor[] 
             {
                 new NamedColor("Red", Color.Red),
-                new NamedColor("Yellow", Color.Yellow),
                 new NamedColor("Green", Color.Green),
-                new NamedColor("Aqua", Color.Aqua),
                 new NamedColor("Blue", Color.Blue),
-                new NamedColor("Purple", Color.Purple)
+                new NamedColor("Yellow", Color.Yellow)
             };
 
             ItemTemplate = new DataTemplate(() => 
